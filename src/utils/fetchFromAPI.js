@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 export const BASE_URL = 'https://youtube-v31.p.rapidapi.com';
 
 const options = {
@@ -7,7 +8,7 @@ const options = {
     maxResults: 50,
   },
   headers: {
-    'X-RapidAPI-Key': '59ebfd8f34mshb89ed0b8cfe49edp147109jsnb00172a30964',
+    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
   },
 };
